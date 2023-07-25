@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_margin="10dp"
+    android:padding="10dp"
+    android:background="@color/theme_item_color"
+    app:cardCornerRadius="10dp"
+    android:layout_gravity="center">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:background="@color/theme_item_color"
+        android:layout_gravity="center">
+
+        <ImageView
+            android:id="@+id/insta_media_details_thumbnail_view"
+            android:layout_width="200dp"
+            android:layout_height="250dp"
+            android:padding="10dp"
+            android:background="@color/theme_item_color"
+            android:contentDescription="@string/download_task_thumbnail_desc"/>
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/insta_media_details_quality_recycler_view"
+            android:layout_width="200dp"
+            android:layout_height="match_parent"
+            android:layout_marginVertical="10dp"
+            android:background="@color/theme_item_color"
+            app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager" />
+    </LinearLayout>
+</androidx.cardview.widget.CardView>

@@ -1,0 +1,16 @@
+<resources>
+    <string name="app_name">SM Downloader</string>
+    <string name="add_download_button_desc">Add Download</string>
+    <string name="download_task_control_button_desc">Pause/Resume task using this button</string>
+    <string name="download_task_thumbnail_desc">Thumbnail</string>
+    <string name="file_name_hint">File Name</string>
+    <string name="task_completed">\"Completed\"</string>
+    <string name="media_indicator">Media Indicator Icon</string>
+    <string name="navigation_drawer_open">Navigation Drawer Open</string>
+    <string name="navigation_drawer_close">Navigation Drawer Close</string>
+    <string name="menu_theme">Theme</string>
+    <string name="insta_login_request_desc">You have to login first for downloading content from instagram.\nYou can use temporary or fake account for this.</string>
+    <string name="path_play">M8,5v14l11,-7z</string>
+    <string name="path_pause">M6,19h4L10,5L6,5v14zM14,5v14h4L18,5h-4z</string>
+    <string name="download_button_desc">Download</string>
+</resources>

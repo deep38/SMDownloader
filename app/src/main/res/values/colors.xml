@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#1595FB</color>
+    <color name="colorPrimaryDark">#1595FB</color>
+    <color name="colorAccent">#28A3F8</color>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+
+    <color name="theme_bg_color">#FAFAFA</color>
+    <color name="theme_item_color">#FFFFFF</color>
+    <color name="default_text_color">#000000</color>
+    <color name="ripple_color">#33000000</color>
+    <color name="light_grey">#727272</color>
+    <color name="transparent_activity_bg">#88000000</color>
+    <color name="selected_item_bg">#35E0FF</color>
+</resources>

@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/transparent_activity_bg">
+        <LinearLayout
+            android:id="@+id/insta_media_details_bottom_sheet"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/bottom_sheet_bg"
+            android:orientation="vertical"
+            app:layout_behavior="@string/bottom_sheet_behavior">
+                <TextView
+                    android:id="@+id/insta_login_req_text_view"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:textColor="@color/default_text_color"
+                    android:textSize="16sp"
+                    android:padding="10dp"
+                    android:gravity="center_horizontal"
+                    android:text="@string/insta_login_request_desc"
+                    android:layout_marginBottom="10dp"
+                    android:visibility="gone"/>
+                <WebView
+                    android:id="@+id/insta_media_details_web_view"
+                    android:layout_width="match_parent"
+                    android:layout_height="500dp"
+                    android:background="@color/theme_item_color"
+                    tools:ignore="WebViewLayout" />
+
+                <ProgressBar
+                    android:id="@+id/insta_media_details_progress_bar"
+                    android:layout_height="100dp"
+                    android:layout_width="match_parent"
+                    android:scaleX="0.5"
+                    android:scaleY="0.5"/>
+
+                <LinearLayout
+                    android:id="@+id/insta_media_details_layout"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal"
+                    android:padding="5dp">
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:orientation="vertical"
+                            android:gravity="center">
+                                <TextView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_margin="5dp"
+                                    android:padding="5dp"
+                                    android:textColor="@color/default_text_color"
+                                    android:textSize="18sp"
+                                    android:text="Download All"/>
+                                <Button
+                                    android:id="@+id/insta_media_download_all_highest_quality_button"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_margin="5dp"
+                                    android:padding="5dp"
+                                    android:background="@drawable/list_item_bg"
+                                    android:textAllCaps="false"
+                                    android:textColor="@color/default_text_color"
+                                    android:text="Highest Quality"/>
+                                <Button
+                                    android:id="@+id/insta_media_download_all_medium_quality_button"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:padding="5dp"
+                                    android:layout_margin="5dp"
+                                    android:background="@drawable/list_item_bg"
+                                    android:textAllCaps="false"
+                                    android:textColor="@color/default_text_color"
+                                    android:text="Medium Quality"/>
+                                <Button
+                                    android:id="@+id/insta_media_download_all_lowest_quality_button"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_margin="5dp"
+                                    android:padding="5dp"
+                                    android:background="@drawable/list_item_bg"
+                                    android:textAllCaps="false"
+                                    android:textColor="@color/default_text_color"
+                                    android:text="Lowest Quality"/>
+                        </LinearLayout>
+
+                        <androidx.recyclerview.widget.RecyclerView
+                            android:id="@+id/insta_media_details_recycler_view"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_marginRight="10dp"/>
+                </LinearLayout>
+
+        </LinearLayout>
+
+        <com.google.android.material.floatingactionbutton.FloatingActionButton
+            android:id="@+id/insta_media_multi_download_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom|start"
+            android:layout_margin="20dp"
+            android:src="@drawable/ic_baseline_arrow_downward_24"
+            android:contentDescription="@string/add_download_button_desc" />
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+	xmlns:app="http://schemas.android.com/apk/res-auto"
+	xmlns:tools="http://schemas.android.com/tools"
+	android:layout_width="match_parent"
+	android:layout_height="wrap_content"
+	android:layout_marginTop="3dp"
+	android:layout_marginHorizontal="3dp"
+	android:clickable="true"
+	android:focusable="true"
+	app:cardCornerRadius="5dp"
+	android:id="@+id/download_task_card_view">
+
+	<LinearLayout
+		android:layout_width="match_parent"
+		android:layout_height="match_parent"
+		android:background="@drawable/list_item_bg"
+		android:paddingHorizontal="10dp"
+		android:paddingVertical="20dp"
+		android:orientation="vertical"
+		android:focusable="false"
+		android:clickable="false">
+	<LinearLayout
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:orientation="horizontal">
+		<RelativeLayout
+			android:layout_width="100dp"
+			android:layout_height="100dp"
+			android:layout_marginEnd="10dp"
+			android:layout_marginBottom="10dp">
+
+			<ImageView
+				android:id="@+id/download_task_thumbnail_view"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:contentDescription="@string/download_task_thumbnail_desc"
+				android:scaleType="centerCrop" />
+			<ImageView
+				android:id="@+id/download_task_media_indicator"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:background="@drawable/media_indicator_bg"
+				android:layout_alignParentBottom="true"
+				android:layout_alignParentEnd="true"
+				android:contentDescription="@string/media_indicator"/>
+		</RelativeLayout>
+		<LinearLayout
+			android:layout_height="100dp"
+			android:layout_width="match_parent"
+			android:paddingBottom="10dp"
+			android:orientation="vertical">
+			<LinearLayout
+				android:layout_height="wrap_content"
+				android:layout_width="match_parent"
+				android:orientation="horizontal">
+				<TextView
+					android:layout_height="wrap_content"
+					android:layout_width="0dp"
+					android:layout_weight="10"
+					android:layout_marginBottom="5dp"
+					android:maxLines="3"
+					android:textSize="16sp"
+					android:textColor="@color/default_text_color"
+					android:textStyle="bold"
+					android:id="@+id/download_task_file_name_textview"/>
+
+				<ImageButton
+					android:layout_height="35dp"
+					android:layout_width="35dp"
+					android:layout_weight="0"
+					android:layout_gravity="end"
+					android:layout_marginBottom="5dp"
+					android:scaleType="fitCenter"
+					android:background="@null"
+					android:src="@drawable/ic_play_arrow_24"
+					android:id="@+id/download_task_controller_button"
+					android:contentDescription="@string/download_button_desc" />
+			</LinearLayout>
+			<RelativeLayout
+				android:layout_height="match_parent"
+				android:layout_width="match_parent"
+				android:gravity="bottom">
+
+				<TextView
+					android:layout_height="wrap_content"
+					android:layout_width="wrap_content"
+					android:textColor="@color/default_text_color"
+					android:id="@+id/download_task_size_textview"/>
+				<TextView
+					android:layout_height="wrap_content"
+					android:layout_width="wrap_content"
+					android:layout_alignParentEnd="true"
+					android:textColor="@color/default_text_color"
+					android:id="@+id/download_task_progress_textview"
+					tools:ignore="RelativeOverlap" />
+			</RelativeLayout>
+		</LinearLayout>
+	</LinearLayout>
+	<ProgressBar
+		android:layout_height="wrap_content"
+		android:layout_width="match_parent"
+		android:max="@integer/progress_max"
+		style="?android:attr/progressBarStyleHorizontal"
+		android:id="@+id/download_task_progressbar"/>
+	</LinearLayout>
+</androidx.cardview.widget.CardView>

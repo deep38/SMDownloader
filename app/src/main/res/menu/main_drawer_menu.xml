@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <item
+        android:id="@+id/menu_option_app_theme"
+        android:title="@string/menu_theme"
+        app:actionViewClass="androidx.appcompat.widget.AppCompatSpinner"
+        app:actionProviderClass="androidx.appcompat.widget.ShareActionProvider"
+        app:actionLayout="@layout/main_theme_toggle" />
+
+</menu>
